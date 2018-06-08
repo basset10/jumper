@@ -1,5 +1,9 @@
 package com.basset.jumper;
 
+import static com.osreboot.ridhvl.painter.painter2d.HvlPainter2D.hvlDrawQuadc;
+
+import org.newdawn.slick.Color;
+
 import com.osreboot.ridhvl.HvlCoord2D;
 import com.osreboot.ridhvl.HvlMath;
 
@@ -34,6 +38,11 @@ public class Platform {
 		yPos = yArg;
 	}
 
+	public void drawPlatform() {
+		
+		hvlDrawQuadc(xPos, yPos,PLATFORM_SIZE_X, PLATFORM_SIZE_Y, Color.orange);
+		
+	}
 	
 
 }
